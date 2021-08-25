@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where are you?</title>
+
+    <link rel="stylesheet" href="style/chatstyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- HTML code for chat messenger modified from https://codepen.io/sean_codes/pen/weQqLE -->
+
+    <div class="container">
+        <div class="namelabel">
+            <div class="profile"></div>
+            <p>Jessica Bratford</p>
+            <span style="font-size: 20px; color: #2A84FF; margin: auto;"><i class="fas fa-video"></i></span>
+            <span style="font-size: 20px; color: #2A84FF; margin: auto;"><i class="fas fa-phone-alt"></i></span>
+            <span style="font-size: 20px; color: #2A84FF; margin: 0 auto;"><i class="far fa-window-minimize"></i></span>
+            <span style="font-size: 22px; color: #2A84FF; margin: auto; margin-top:7px; "><i class="fas fa-times"></i></span>
+
+        </div>
+        <div class="messages" id="chat-window">
+            <div id="chat-intro">
+                <div class="profile2"></div>
+                <span>Jessica Bratford</span><br>
+                Facebook <br> You're not friends on Facebook <br> Lives in Seattle, Washington
+            </div>
+            <div class="message invisible" id="msg1">Hi! I'm looking for an old friend. She attended Martin Grove a few years ago.</div>
+            <div class="message invisible" id="msg2">
+                <p>Her name is Sam.</p>
+                <div id="msg2-img"></div>
+            </div>
+            <div class="message invisible" id="msg3">Did you know her or her last name by any chance? </div>
+            <div id="typing-animation" style="display: none;">
+                <span class="typing-dots loadingFadeInline"></span>
+                <span class="typing-dots loadingFadeInline"></span>
+                <span class="typing-dots loadingFadeInline"></span>
+            </div>
+
+            <div class="message-teacher flyin2" id="msg4" style="display: none;">Hello there!</div>
+            <div id="typing-animation2" style="display: none;">
+                <span class="typing-dots loadingFadeInline"></span>
+                <span class="typing-dots loadingFadeInline"></span>
+                <span class="typing-dots loadingFadeInline"></span>
+            </div>
+            <div class="message-teacher" id="msg5" style="display: none;">Unfortunately, I never taught Sam; Her last name is a mystery to me as well. 😔 </div>
+            <div class="message" id="msg55" style="display: none;">Do you know anything that could help me find her?</div>
+            <div id="typing-animation3" style="display: none;">
+                <span class="typing-dots loadingFadeInline"></span>
+                <span class="typing-dots loadingFadeInline"></span>
+                <span class="typing-dots loadingFadeInline"></span>
+            </div>
+            <div class="message-teacher" id="msg6" style="display: none;">Well, I do know she was in the photography club. I always saw her carrying a camera and taking pictures. </div>
+            <div class="message-teacher" id="msg7" style="display: none;">In fact, I believe she won a contest for one of them. It was all over the news! </div>
+            <div class="message-teacher" id="msg8" style="display: none;">She’s a super talented girl!</div>
+            <div class="message-teacher" id="msg9" style="display: none;">Best of luck on your search. I hope you two are reunited soon!</div>
+        </div>
+
+        <div class="input" id="chat-button" onClick="blueMessage()">
+            <div class="plus-icon">
+                <i class="fas fa-plus-circle"></i>
+            </div>
+            <div class="subinput">
+                <div class="inputfield">
+                    <div class="chatInput" id="chatBox">Hi! I'm looking for an...</div>
+                </div>
+                <div class="smiley" style="font-size: 23px; color: #2A84FF; margin: auto;">
+                    <i class="fas fa-smile"></i>
+                </div>
+            </div>
+
+            <div class="btn" style="font-size: 21.5px; color: #2A84FF; margin: auto;"><i class="fas fa-paper-plane"></i></div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <script src="chat.js"> </script>
+
+
+
+</body>
+
+</html>

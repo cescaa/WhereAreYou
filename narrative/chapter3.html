@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where are you?</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/gallery-test.css">
+
+    <link rel="stylesheet" media="screen and (max-width: 640px)" href="style/mobile.css">
+
+    <link rel="stylesheet" media="screen and (min-width: 641px)" href="style/medium.css">
+
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="style/large.css">
+
+    <link rel="stylesheet" media="screen and (min-width: 1900px)" href="style/style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- MENU *START* Code modified from https://www.w3schools.com/howto/howto_css_vertical_menu.asp 2560-->
+
+    <div class="vertical-menu">
+        <div class="chapter-cell">
+            <div class="hide">
+                <h4>Chapters</h4>
+            </div>
+            <div class="chapters_menu">
+
+                <a href="chapter1.html">1</a>
+                <a href="chapter2.html">2</a>
+                <a href="#" class="active">3</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU *END* -->
+
+    <section>
+        <div class="main">
+            <div class="chapters">
+                <h3>Chapter 3</h3>
+                <h1><i>Courage</i></h1>
+            </div>
+            <div class="mainText">
+                Without a second thought,<br>Robin entered Sam's name into Google<br>
+                and found her Instagram.<br> Robin nearly jumped out of her chair.<br>
+                She couldn't believe she finally found Sam.
+
+            </div>
+
+        </div>
+    </section>
+    <div class="grid2">
+        <img src="img/phonescroll.png" width="100%" id="mobilepic3">
+
+
+        <div class="cell col3">
+            Some of her posts were her photography, others selfies, but most were photos with her friends. She felt more discouraged the further she scrolled down the page. Sam seemed really happy, and Robin was glad she was, but she couldn’t help feeling a little sad that Sam might’ve forgotten about her. A million thoughts rushed through her mind:<br><br> <i>What if this was a mistake and she didn’t want to hear from me? Or worse, what if she didn’t remember our promise? What if I was just interrupting her amazing life with her amazing friends? What if, what if, what if...</i>
+            <br><br>
+            <img src="img/phonescroll.png" width="100%" id="mobilepic4">
+            Robin pushed back her chair and stepped away from her desk.
+            As she paced back and forth, debating whether or not she should message Sam, small bits of yellow, blues, pinks and other colours caught her eye. <br><br>
+
+            <a id="magic" onclick="showMore()" href=" https://ixd1721.firebird.sheridanc.on.ca/findSam/" target="_blank"><button>Explore Robin's room</button></a>
+
+            <!-- SIXTH QUESTION *START* -->
+
+            <div class="question" id="appear" style="display: none;">
+                <span style="display: block; text-align: center;color: #60667E;">What catches Robin's eye?</span>
+
+                <input id="guess-input6" type="text" name="bracelet" value="" placeholder="Hint: One word" />
+                <button id="guess-submit6" class="guess-submit6" style="margin-bottom: 0vh;">Submit</button>
+
+            </div>
+
+            <div class="hidden" id="wrong6">
+                <h4> Nope, try again!</h4>
+            </div>
+            <!-- SIXTH QUESTION *END* -->
+        </div>
+
+    </div>
+    <div id="ending">
+        <h1>Robin reached for it</h1>
+        <div class="cell col4">
+
+            and she realized it was her own bracelet,<br>
+            just like the one Sam wore in the photo.<br>
+
+            Her courage came flooding back in. <br>She opened the messenger and began typing...
+
+            <img src="img/meetingsamagain.png" width="100%">
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="chapter3.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where are you?</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/gallery-test.css">
+
+    <link rel="stylesheet" media="screen and (max-width: 640px)" href="style/mobile.css">
+
+    <link rel="stylesheet" media="screen and (min-width: 641px)" href="style/medium.css">
+
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="style/large.css">
+
+    <link rel="stylesheet" media="screen and (min-width: 1900px)" href="style/style.css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+    <!-- MENU *START* Code modified from https://www.w3schools.com/howto/howto_css_vertical_menu.asp -->
+
+    <div class="vertical-menu">
+        <div class="chapter-cell">
+            <div class="hide">
+                <h4>Chapters</h4>
+            </div>
+            <div class="chapters_menu">
+                <a href="chapter1.html">1</a>
+                <a href="#" class="active">2</a>
+                <a id="lockChap3"><img src="img/lock.png" id="lock">
+                    <div id="text">3</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU *END* -->
+
+    <section>
+        <div class="main">
+            <div class="chapters">
+                <h3>Chapter 2</h3>
+                <h1><i>Old News</i></h1>
+            </div>
+            <div class="mainText">
+                Robin was surprised at how public Jessica Bratford kept her profile. <br>
+                She figured she would’ve wanted her personal life hidden from students, <br>
+                even if most of her posts were just cat videos,<br>
+                innocent memes only teachers would understand, <br>
+                and stream of consciousness-esque status updates.
+            </div>
+
+        </div>
+    </section>
+
+    <div class="grid">
+        <div class="cell col3">
+            <i>Lucky me</i>, Robin thought. Someone so open on Facebook, especially a teacher, would probably have less reservations revealing student information to a complete stranger. Robin sent her a message and attached the photo of her and Sam. What she was doing could be stalking, but at least Jessica would know it was for good intentions.<br><br>
+            <img src="img/teacheremail.png" width="100%" id="mobilepic2">
+            Her message back was polite, but sprinkled with enough kindness and emojis not to feel cold and distant. <br><br>
+
+            <!-- FOURTH QUESTION START -->
+            <span style="display: block; text-align: center;color: #60667E;">What high school extracurricular was Sam involved in? </span>
+
+            <div class="question">
+
+                <input id="guess-input4" type="text" name="photography club" value="" placeholder="Hint: Two words" />
+
+                <button id="guess-submit4" class="guess-submit4" style="margin-bottom: 0;">Submit</button>
+                <div class="hidden" id="wrong4">
+                    <h4> Nope, try again!</h4>
+                </div>
+            </div>
+
+            <!-- FOURTH QUESTION END -->
+        </div>
+
+        <div class="cell col3" id="mainPic2">
+            <img src="img/teacheremail.png" width="100%">
+        </div>
+
+    </div>
+
+
+    <div class="cell col1" id="deadEnd" style="display: none;">
+
+        <h1>Another dead end.</h1>
+        Finding Sam was starting to feel impossible. Robin stared at the teacher’s message and took a deep breath. Maybe she could find something about the contest, but where would she begin?
+
+        <div id="searchImage"> <img src="img/searchbarfinal2.png" width="100%"></div>
+
+        She opened another tab and typed <i>Martin Grove High School student photography winner</i> into Google. <br><br>
+        94.4 million results in 0.74 seconds.
+        That’s a start.<br><br>
+
+        Robin scanned through them, clicking the ones that looked the most promising. On her 30th or so click, she found it. During Sam's senior year, she won a country-wide photography contest and the winning photo was featured in her local gallery.<br><br>
+
+        And there it was—her last name—printed on the award she clutched close to her chest.<br><br>
+
+        <!-- FIFTH QUESTION START -->
+        <span style="display: block; text-align: center;color: #60667E;">What is Sam's last name?</span>
+
+        <div class="question">
+
+            <input id="guess-input5" type="text" name="kaur" value="" placeholder="Hint: One word" />
+            <button id="guess-submit5" class="guess-submit5" style="margin-bottom: 0;">Submit</button>
+
+        </div>
+
+        <div id="messages">
+
+            <div class="hidden" id="wrong5">
+                <h4> Nope, try again!</h4>
+            </div>
+
+        </div>
+        <!-- FIFTH QUESTION END -->
+
+    </div>
+
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> -->
+    <script src="chapter2.js"> </script>
+</body></html>

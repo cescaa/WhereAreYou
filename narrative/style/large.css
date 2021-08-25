@@ -1,0 +1,636 @@
+@font-face {
+    font-family: Moranga-Medium;
+    src: url(../Moranga/Moranga-Medium.otf) format("opentype");
+}
+
+@font-face {
+    font-family: Moranga-Regular;
+    src: url(../Moranga/Moranga-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: Moranga-LightIt;
+    src: url(../Moranga/Moranga-LightIt.otf) format("opentype");
+}
+
+
+@font-face {
+    font-family: Moranga-Light;
+    src: url(../Moranga/Moranga-Light.otf) format("opentype");
+}
+
+@font-face {
+    font-family: Proxima;
+    src: url(../Proxima_Nova/ProximaSoft-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: ProximaMed;
+    src: url(../Proxima_Nova/ProximaSoft-Medium.otf) format("opentype");
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #FEF0DC;
+    font-family: Proxima;
+    font-size: 1rem;
+    color: black;
+}
+
+/* MENU -- START */
+
+.vertical-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5rem;
+    height: 100vh;
+    background-color: #61667C;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    box-shadow: -5px 0px 20px 5px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.chapter-cell {
+    padding-top: 0vh;
+
+}
+
+.hide h4 {
+    background-color: inherit;
+    color: white;
+    font-family: Moranga-Regular;
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    opacity: 0%;
+    cursor: default;
+}
+
+
+.vertical-menu a {
+    font-family: Moranga-Regular;
+    background-color: inherit;
+    color: #252830;
+    display: block;
+    margin: auto;
+    padding: 0.5rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    text-decoration: none;
+    width: 4.5rem;
+    height: 4.5rem;
+
+
+}
+
+.vertical-menu:hover {
+    width: 11rem;
+}
+
+.vertical-menu:hover .hide h4 {
+    opacity: 100%;
+
+
+}
+
+.vertical-menu a.active {
+    color: #FEF0DC;
+}
+
+.vertical-menu a:hover {
+    color: white;
+    width: 4.5rem;
+    height: 4.5rem;
+    cursor: pointer;
+    background-color: #A6AED1;
+    border-radius: 50%;
+    margin-bottom: 3.5rem;
+}
+
+.vertical-menu a.active:hover {
+    color: white;
+    border: none;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-bottom: 3.5rem;
+
+
+}
+
+#lockChap2 #text {
+    display: block;
+}
+
+#lockChap2:hover #text,
+#lockChap3:hover #text {
+    display: none;
+
+}
+
+#lock {
+    display: none;
+    max-height: 3.5rem;
+    width: auto;
+}
+
+#lockChap2:hover #lock,
+#lockChap3:hover #lock {
+    display: inline-block;
+    margin: 0;
+
+}
+
+#lockChap2,
+#lockChap3 {
+    background-color: #60667E;
+    cursor: default;
+
+}
+
+
+
+
+/* MENU -- END */
+
+
+section {
+    width: auto;
+    height: 100vh;
+    background: #FEF0DC;
+    /*display: grid;*/
+    margin-bottom: 40px;
+    text-align: center;
+    padding-top: 10%;
+
+
+}
+
+.main {
+    width: 95%;
+    margin-left: 0;
+}
+
+
+
+.chapters {
+    -webkit-animation: fadein 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s;
+    /* Firefox < 16 */
+
+}
+
+.chapters h3 {
+    font-size: 3rem;
+    font-family: Moranga-Medium;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+
+
+}
+
+.chapters h1 {
+    font-size: 7rem;
+    line-height: 4rem;
+    font-family: Moranga-LightIt;
+    color: #60667E;
+    margin: 2.5rem;
+    text-align: center;
+
+}
+
+.mainText {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    font-family: Proxima;
+    -webkit-animation: fadein 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s;
+    /* Firefox < 16 */
+
+}
+
+.gallery {
+    cursor: pointer;
+}
+
+.gallery:hover {
+    color: #808598;
+}
+
+
+.photoAlbum {
+    background-image: url(../PhotoAlbum.png);
+    background-position: 0rem 2rem;
+    height: auto;
+    width: 95%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    margin-right: 5rem;
+
+}
+
+.photoAlbumText img {
+    display: none;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+
+.subHeader h1 {
+    font-family: Moranga-LightIt;
+    font-size: 5rem;
+    line-height: 5rem;
+    color: #60667E;
+    width: 50%;
+    text-align: left;
+    margin: auto;
+    margin-right: 5%;
+    margin-bottom: 3rem;
+
+}
+
+.photoAlbumText {
+
+    background-color: rgba(254, 240, 220, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+    margin-right: 5%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-family: Proxima;
+    width: 50%;
+    height: auto;
+
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 45%;
+    grid-gap: 2%;
+    margin-bottom: 2rem;
+    margin-left: 2.5%;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    height: auto;
+
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 48% 50%;
+    grid-gap: 2%;
+    margin-left: 0%;
+    margin-right: 8rem;
+    margin-bottom: 4vh;
+
+}
+
+
+
+.cell {
+    height: auto;
+
+}
+
+.col3 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-family: Proxima;
+    padding: 1.5rem;
+    height: auto;
+
+
+}
+
+.col3 img {
+    display: block;
+    margin: auto;
+    margin-top: 6rem;
+
+}
+
+#mobilepic3 {
+    display: block;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    max-width: 80%;
+    height: auto;
+}
+
+#mobilepic4 {
+    display: none;
+}
+
+
+
+.col3 span,
+.col1 span {
+    text-align: center;
+}
+
+#mobilepic,
+#mobilepic2 {
+    display: none;
+}
+
+.first,
+.col2 img {
+    max-width: 80%;
+    height: auto;
+    margin: 0;
+    margin-top: 2.5rem;
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+
+}
+
+#double {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin-top: -2rem;
+    margin-right: 0rem;
+    margin-left: 5rem;
+}
+
+
+
+
+.col1 {
+    width: 45%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-family: Proxima;
+    padding: 10px;
+    padding-bottom: 8rem;
+
+}
+
+
+
+
+#deadEnd h1,
+#sign-in h1,
+#ending h1 {
+    text-align: center;
+    font-family: Moranga-LightIt;
+    font-size: 5rem;
+    line-height: 5rem;
+    color: #60667E;
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+}
+
+#sign-in h1,
+#ending h1 {
+
+    margin-right: 5rem;
+}
+
+
+
+.col4 {
+    width: 65%;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-family: Proxima;
+    padding: 10px;
+    padding-right: 4rem;
+    text-align: center;
+
+}
+
+.col4 img {
+    display: block;
+    margin: 2rem auto;
+
+}
+
+#ending {
+    display: none;
+}
+
+
+.hidden {
+    display: none;
+    text-align: center;
+    color: firebrick;
+}
+
+.hidden h4 {
+    margin-top: 0.5rem;
+}
+
+
+input {
+    font-family: Proxima;
+    text-align: center;
+    display: block;
+    background-color: rgb(253, 229, 195, 0.9);
+    width: 56%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border: 2px solid #FEF0DC;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+
+}
+
+input::placeholder {
+    color: rgba(219, 148, 72, 0.35);
+    text-transform: lowercase;
+    font-size: 1.5rem;
+
+}
+
+input:focus {
+    outline: none;
+    background-image: linear-gradient(to right, rgba(219, 148, 72, 0.8) 60%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 30px 3px;
+    background-repeat: repeat-x;
+}
+
+input:hover {
+    outline: none;
+    background-image: linear-gradient(to right, rgba(219, 148, 72, 0.8) 60%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 30px 3px;
+    background-repeat: repeat-x;
+}
+
+
+
+#guess-input3 {
+    text-transform: lowercase;
+
+}
+
+#guess-input,
+#guess-input2,
+#guess-input3,
+#guess-input4,
+#guess-input5,
+#guess-input6 {
+    border: 2px solid #FEF0DC;
+
+}
+
+
+button {
+    display: block;
+    background-color: #60667E;
+    color: white;
+    margin: 0vh auto;
+    margin-top: 1rem;
+    padding: 0.75rem 0.85rem;
+    font-family: Proxima;
+    font-size: 1.5rem;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(3px);
+    background-color: #595873;
+
+
+}
+
+#magic button {
+    padding: 0.8rem 1.25rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+#searchImage {
+    width: 100%;
+    height: auto;
+    margin: 3rem 0;
+    margin-bottom: 2.5rem;
+
+}
+
+.guess-submit {
+    text-decoration: none;
+    color: white;
+}
+
+/* TITLE */
+#qr_sect {
+    position: relative;
+    background-image: url(../img/LandingIllustrations.png);
+    background-position: 6vh -2vh;
+    height: 100vh;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+
+}
+
+.centered {
+    position: absolute;
+    padding-left: 35%;
+    padding-top: 12%;
+    font-size: 1.5rem;
+    font-family: ProximaMed;
+}
+
+
+
+.centered h1 {
+    text-align: left;
+    font-family: Moranga-RegularIt;
+    font-size: 7rem;
+    line-height: 7rem;
+    color: #60667E;
+    margin: 0%;
+    padding: 0;
+    padding-bottom: 2rem;
+
+}
+
+.centered span {
+    margin-left: 2rem;
+
+}
+
+#friendship {
+    padding: 0.9rem 3.75rem;
+    margin-top: 3rem;
+    margin-left: 7rem;
+    font-size: 1.5rem;
+    letter-spacing: 1.25px;
+    border-radius: 20px;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

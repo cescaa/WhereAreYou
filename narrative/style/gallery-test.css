@@ -1,0 +1,191 @@
+/*GALLERY POPUP CSS // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp and https://www.w3schools.com/howto/howto_js_slideshow.asp--> */
+
+
+.mySlides {
+    display: none
+}
+
+.mySlides img {
+    display: block;
+    margin: auto;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    display: none;
+    position: relative;
+
+
+
+}
+
+
+.purple {
+
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    margin: auto;
+    padding: 1rem 2.5rem;
+    padding-top: 3.25rem;
+    width: 60%;
+    border-radius: 1rem;
+    background-color: #61667C;
+    box-shadow: -5px 5px 20px 5px rgba(0, 0, 0, 0.25);
+    animation: flyin 0.75s;
+
+    z-index: 10;
+}
+
+@media only screen and (max-width: 1900px) {
+    .purple {
+        position: fixed;
+        top: 1%;
+        left: 9%;
+        width: 81%;
+        padding: 0.3rem 0rem;
+        padding-top: 1rem;
+        box-shadow: 0px 1px 100vh 100vh rgba(0, 0, 0, 0.8);
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 0.5rem;
+        color: #A6AED1;
+        font-weight: bold;
+        font-size: 4rem;
+
+    }
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 1rem;
+    color: #A6AED1;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: .25rem;
+}
+
+.prev {
+    left: .25rem;
+}
+
+@media only screen and (max-width: 1900px) {
+
+    .next {
+        right: -4rem;
+    }
+
+    .prev {
+        left: -4rem;
+    }
+}
+
+
+
+
+/* The Close Button */
+.close {
+    color: #A6AED1;
+    position: absolute;
+    top: 0.3rem;
+    right: 1.25rem;
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1900px) {
+    .close {
+        position: absolute;
+        top: -1.25rem;
+        right: -3.75rem;
+        font-size: 6rem;
+        font-weight: bold;
+        padding: 0.5rem;
+
+    }
+}
+
+.close:hover,
+.close:focus,
+.next:hover,
+.next:focus,
+.prev:hover,
+.prev:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    margin: 0 5px;
+    background-color: #A6AED1;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.4s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #252830;
+}
+
+@media only screen and (max-width: 1900px) {
+    .dots {
+        position: absolute;
+        top: 97.5%;
+        left: 45%;
+    }
+
+    .dot {
+        height: 0.5rem;
+        width: 0.5rem;
+        margin: 0 3px;
+        padding: auto;
+    }
+
+}
+
+@keyframes flyin {
+    from {
+        transform: translateY(400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
