@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where are you?</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/gallery-test.css">
+
+    <link rel="stylesheet" media="screen and (max-width: 640px)" href="style/mobile.css">
+
+    <link rel="stylesheet" media="screen and (min-width: 641px)" href="style/medium.css">
+
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="style/large.css">
+
+    <link rel="stylesheet" media="screen and (min-width: 1900px)" href="style/style.css">
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <!-- MENU *START* 
+Code modified from https://www.w3schools.com/howto/howto_css_vertical_menu.asp 
+
+Modified code for text to image on hover: https://stackoverflow.com/questions/30785038/change-image-to-text-on-hover/30799256#30799256-->
+
+    <div class="vertical-menu">
+        <div class="chapter-cell">
+            <div class="hide">
+                <h4>Chapters</h4>
+            </div>
+            <div class="chapters_menu">
+                <a href="#" class="active">1</a>
+                <a id="lockChap2">
+                    <img src="img/lock.png" id="lock">
+                    <div id="text">2</div>
+                </a>
+                <a id="lockChap3"><img src="img/lock.png" id="lock">
+                    <div id="text">3</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU *END* -->
+
+    <section>
+        <div class="main">
+            <div class="chapters">
+                <h3>Chapter 1</h3>
+                <h1><i>The Past</i></h1>
+            </div>
+            <div class="mainText">
+                Robin surveyed her room, trying to decide what to tackle first: <br>
+                The month’s worth of dirty laundry on the floor, <br>
+                her poor desk hiding under a scatter of books, pens, <br>
+                and plates of half-eaten food and coffee mugs,
+                <br>
+                or the twisted pile of blankets, pillows and <br>
+                God knows what staring at her?
+
+            </div>
+
+        </div>
+    </section>
+
+    <div class="photoAlbum">
+
+        <div class="subHeader">
+            <h1><i>Better start small,</i></h1>
+        </div>
+        <div class="photoAlbumText">
+
+            Robin thought, as she walked towards her unmade bed and began pushing the twisted pile towards the edge until she heard the ruffle of paper and something heavy hit the floor.
+            She looked down and saw a photo album, opened to a picture of her and Sam.
+            <br>
+            <img src="PhotoAlbum.png" width="100%">
+            <br>
+            Carefully, she pulled the photo from the plastic sleeve to inspect it further. Although time had caused the edges to worn and colours to fade slightly, their toothy smiles and crinkled eyes were as clear as the day it was taken. Their last day together. Robin knew because Sam wore one of the two matching bracelets they gave each other as farewell presents.
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="cell col3">
+
+            Robin promised they’d always be friends no matter how far Sam moved, but then life got more complicated. At first they emailed each other everyday, but then days became weeks, and then months, and then just on birthdays or Christmases. It's been so long, Robin couldn't remember when she sent her last email.
+            <br>
+            <img src="img/samphoto.png" width="100%" height="100%" id="mobilepic">
+            <br>
+            <i>So much for my promise,</i> Robin thought as she gently ran the tips of her fingers across the photo. She noticed they left a soft grey smudge. She turned over the photo and saw a note written in charcoal.<br><br>
+
+            <!--FIRST QUESTION START // All questions code modified from https://codepen.io/meloffbird/pen/RrMeeZ -->
+
+            <span style="display: block; color: #60667E;">What email is written on the back of the photo? </span>
+
+            <div class="question">
+                <input id="guess-input3" type="text" name="happibunni43@hotmail.com" value="" placeholder="hint: rabbit" />
+
+                <button id="guess-submit3" class="guess-submit3" style="margin-bottom: 0;">Submit</button>
+
+
+            </div>
+
+            <div class="hidden" id="wrong">
+                <h4> Nope, try again!</h4>
+            </div>
+
+            <!--FIRST QUESTION END -->
+        </div>
+        <div class="cell col2">
+            <img src="img/samphoto.png" class="first">
+        </div>
+    </div>
+
+    <div id="sign-in2" style="display: none;">
+
+        <div class="grid">
+            <img src="img/keyboard.png" style="-ms-transform: rotate(0deg);
+transform: rotate(0deg);" id="double">
+            <!--SECOND PIC -->
+
+
+            <div class="cell col3">
+                Sam broke her promise too. Sadness, regret, and disappointment suddenly washed over Robin. She started to wonder what Sam was like now. Was she the same person Robin remembered? Did Sam think of her too?
+                <br><br>
+                Social media would answer her questions. Robin walked over to her computer, completely forgetting the mess she had to clean. But as she began to type Sam's name into the search bar, she realized she didn’t know Sam’s handle or even her last name. <br><br>
+
+                Finding her would be harder than she thought. She tapped her fingers on her desk, trying to think of where to begin. Finally, it came to her:
+
+                <!-- GALLERY LINK -->
+                <span id="gallery" style="cursor: pointer;" onclick="openModal();currentSlide(1)"><i>Our emails!</i>
+                </span><br><br>
+
+                <!--SECOND QUESTION START -->
+                <span style="display: block; text-align: center;color: #60667E;">What is Sam's old elementary school called?</span>
+
+                <div class="question">
+
+                    <input id="guess-input2" type="text" name="martin grove" value="" placeholder="Hint: Two words" />
+
+                    <button id="guess-submit2" class="guess-submit2" style="margin-bottom: 0;">Submit</button>
+
+                </div>
+
+                <div id="messages">
+
+                    <div class="hidden space" id="wrong2">
+                        <h4> Nope, try again!</h4>
+                    </div>
+
+                </div>
+
+                <!--SECOND QUESTION END -->
+
+
+            </div>
+        </div>
+    </div>
+    <!-- GALLERY POPUP *START* // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp and https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+    <div class="slideshow-container" id="myModal">
+
+        <div class="purple">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+
+            <div class="mySlides fade">
+                <img src="img/emails-1.png" style="width:95%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/emails-2.png" style="width:95%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/emails-3.png" style="width:95%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/emails-4.png" style="width:95%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/emails-5.png" style="width:95%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+            <br>
+
+            <div class="dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </div>
+    <!-- GALLERY POPUP *END* -->
+
+
+
+    <div id="sign-in" style="display: none;">
+        <h1>After repeatedly typing</h1>
+        <div class="cell col1">
+            and deleting, and typing and deleting, Robin sent the email and almost immediately, she heard the familiar notification sound of new mail. It was an automated message: “This mailbox is no longer in service.” Despite her disappointment, Robin wasn’t surprised. Sam probably thought <i>happibunni43@hotmail.com</i> wasn’t appropriate for a twenty-something working professional anymore and changed it.
+
+            <p>Robin would have to reach her another way. She scanned through their old emails, looking for clues. Sam mentioned her high school in one of them. Maybe Robin could contact a student or teacher she knew. She checked Facebook, but found probably hundreds of people linked to her school. Where would she even begin? They couldn’t have all known Sam. Robin needed to find a photo, a status update—something indicating they knew Sam.
+                <br><br>
+                And once she did, she’d be a step closer to finding her friend.
+                <br><br>
+
+                <!--THIRD QUESTION START -->
+                <span style="display: block; text-align: center;color: #60667E;">Who does Robin message?</span>
+
+                <div class="question">
+
+                    <input id="guess-input" type="text" name="jessica bratford" value="" placeholder="Hint: Two words" />
+
+                    <button id="guess-submit" class="guess-submit" style="margin-bottom: 0;">Submit</button>
+
+                </div>
+
+                <div id="messages">
+
+                    <div class="hidden" id="wrong3">
+                        <h4> Nope, try again!</h4>
+                    </div>
+
+                </div>
+                <!--THIRD QUESTION END -->
+
+        </div>
+    </div>
+
+    <!-- GALLERY JS *START* // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp and https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+
+
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <!-- GALLERY JS *END* -->
+    <script src="form.js"> </script>
+</body></html>
