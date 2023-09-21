@@ -1,5 +1,6 @@
 # WhereAreYou
 ⚠️ WARNING ⚠️
+
 Given that I worked on this project early in my JavaScript/front-end journey and this was my VERY FIRST attempt at jQuery,
 I want to warn you that my code is somewhat redundant (WET), a bit disorganized, and it may give you a migraine. 🤦🏻‍♀️
 
